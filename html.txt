@@ -51,7 +51,7 @@ td,th{border:1px solid #1e293b;padding:10px}
 <div class="hero">
 <h1>Professional LED Lighting Manufacturer</h1>
 <p>Since 1995 · Trusted by Architects & Contractors</p>
-<a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">Get Quote on WhatsApp</a>
+<a class="btn" href="https://wa.me/916306350033" target="_blank">Get Quote on WhatsApp</a>
 </div>
 
 <!-- PRODUCTS -->
@@ -124,7 +124,7 @@ designed for residential, commercial, industrial, and infrastructure projects.
 <!-- ADMIN -->
 <section id="admin" class="hidden">
 <h2>Admin Panel</h2>
-<input id="adminPass" placeholder="Admin Password">
+<input id="adminPass" placeholder="admin123">
 <button onclick="login()">Login</button>
 
 <div id="panel" class="hidden">
@@ -140,11 +140,11 @@ designed for residential, commercial, industrial, and infrastructure projects.
 © 2026 DIYA LITE · LED Lighting Manufacturer Since 1995
 </footer>
 
-<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX" target="_blank">WhatsApp</a>
-<a class="call" href="tel:+91XXXXXXXXXX">Call</a>
+<a class="whatsapp" href="https://wa.me/916306350033" target="_blank">WhatsApp</a>
+<a class="call" href="tel:+916306350033">Call</a>
 
 <script>
-const PASSWORD="admin123";
+const PASSWORD="shiva099";
 
 function saveLead(){
 let leads=JSON.parse(localStorage.getItem("leads")||"[]");
