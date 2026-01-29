@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DIYA LITE | LED Lighting Manufacturer Since 1995</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<meta name="description" content="DIYA LITE is a professional LED lighting manufacturer since 1995. Panel lights, downlights, street lights, industrial LED lighting for architects and contractors.">
+<meta name="keywords" content="LED lighting manufacturer India, panel light, downlight, street light, industrial LED, lighting company">
+
+<style>
+body{margin:0;font-family:Arial;background:#0f172a;color:#fff;scroll-behavior:smooth}
+header{position:sticky;top:0;background:#020617;padding:15px 30px;display:flex;justify-content:space-between;align-items:center;z-index:1000}
+header h2{color:#38bdf8;margin:0}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:500}
+nav a:hover{color:#38bdf8}
+.hero{text-align:center;padding:120px 20px;background:linear-gradient(180deg,#020617,#0f172a)}
+.hero h1{font-size:42px}
+.hero p{color:#cbd5f5;font-size:18px}
+.btn{background:#38bdf8;color:#000;padding:14px 30px;text-decoration:none;border-radius:6px;display:inline-block;margin-top:25px;font-weight:bold}
+section{padding:80px 20px;text-align:center}
+.light{background:#020617}
+.grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px;margin-top:40px}
+.card{background:#020617;padding:25px;border-radius:12px;border:1px solid #1e293b}
+.card img{width:100%;border-radius:8px;margin-bottom:10px}
+input,textarea{width:100%;padding:12px;margin-bottom:12px;border-radius:6px;border:none;font-size:15px}
+button{padding:14px;width:100%;background:#38bdf8;border:none;font-weight:bold;cursor:pointer}
+.whatsapp,.call{position:fixed;right:20px;padding:14px 16px;border-radius:50px;color:#000;text-decoration:none;font-weight:bold;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.whatsapp{bottom:80px;background:#25D366}
+.call{bottom:20px;background:#38bdf8}
+footer{background:#020617;text-align:center;padding:20px;color:#94a3b8;font-size:14px}
+.hidden{display:none}
+table{width:100%;border-collapse:collapse;margin-top:20px}
+td,th{border:1px solid #1e293b;padding:10px}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>DIYA LITE</h2>
+<nav>
+<a href="#products">Products</a>
+<a href="#dealer">Dealers</a>
+<a href="#contact">Contact</a>
+<a href="#admin">Admin</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>Professional LED Lighting Manufacturer</h1>
+<p>Since 1995 · Trusted by Architects & Contractors</p>
+<a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">Get Quote on WhatsApp</a>
+</div>
+
+<!-- PRODUCTS -->
+<section id="products">
+<h2>Our Product Range</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200?text=Panel+Light">
+<h3>LED Panel Lights</h3>
+<p>Low glare office & commercial lighting solutions</p>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200?text=Downlight">
+<h3>LED Downlights</h3>
+<p>Architectural & residential applications</p>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200?text=Street+Light">
+<h3>LED Street Lights</h3>
+<p>Outdoor roadway & area lighting</p>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200?text=Industrial+Light">
+<h3>Industrial LED Lights</h3>
+<p>High bay lighting for factories & warehouses</p>
+</div>
+
+</div>
+</section>
+
+<!-- SEO CONTENT -->
+<section class="light">
+<h2>LED Lighting Solutions for Every Application</h2>
+<p style="max-width:900px;margin:auto;color:#cbd5f5">
+DIYA LITE is a leading LED lighting manufacturer in India since 1995.
+We specialize in energy-efficient, reliable, and application-based LED lighting.
+Our product range includes panel lights, downlights, street lights, and industrial LED luminaires
+designed for residential, commercial, industrial, and infrastructure projects.
+</p>
+</section>
+
+<!-- DEALER -->
+<section id="dealer">
+<h2>Dealer / Distributor Opportunity</h2>
+<p>Join our growing dealer network across India</p>
+<ul style="list-style:none;color:#cbd5f5;padding:0">
+<li>✔ Strong brand since 1995</li>
+<li>✔ High margin LED products</li>
+<li>✔ Technical & marketing support</li>
+<li>✔ Long-term partnership</li>
+</ul>
+<a class="btn" href="#contact">Apply for Dealership</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="light">
+<h2>Contact Us</h2>
+<form onsubmit="saveLead();return false;">
+<input id="name" placeholder="Your Name" required>
+<input id="phone" placeholder="Phone Number" required>
+<textarea id="msg" placeholder="Project / Requirement"></textarea>
+<button>Submit Enquiry</button>
+</form>
+</section>
+
+<!-- ADMIN -->
+<section id="admin" class="hidden">
+<h2>Admin Panel</h2>
+<input id="adminPass" placeholder="Admin Password">
+<button onclick="login()">Login</button>
+
+<div id="panel" class="hidden">
+<h3>Saved Leads</h3>
+<table>
+<thead><tr><th>Name</th><th>Phone</th><th>Message</th></tr></thead>
+<tbody id="leadTable"></tbody>
+</table>
+</div>
+</section>
+
+<footer>
+© 2026 DIYA LITE · LED Lighting Manufacturer Since 1995
+</footer>
+
+<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX" target="_blank">WhatsApp</a>
+<a class="call" href="tel:+91XXXXXXXXXX">Call</a>
+
+<script>
+const PASSWORD="admin123";
+
+function saveLead(){
+let leads=JSON.parse(localStorage.getItem("leads")||"[]");
+leads.push({name:name.value,phone:phone.value,msg:msg.value});
+localStorage.setItem("leads",JSON.stringify(leads));
+alert("Enquiry submitted successfully!");
+name.value="";phone.value="";msg.value="";
+}
+
+function login(){
+if(adminPass.value===PASSWORD){
+document.getElementById("panel").classList.remove("hidden");
+let data=JSON.parse(localStorage.getItem("leads")||"[]");
+leadTable.innerHTML="";
+data.forEach(l=>{
+leadTable.innerHTML+=`<tr><td>${l.name}</td><td>${l.phone}</td><td>${l.msg}</td></tr>`;
+});
+}else{
+alert("Wrong password");
+}
+}
+</script>
+
+</body>
+</html>
